@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Permanent Marker";
+  src: url(./fonts/PermanentMarker.ttf) format("truetype"),
+    url(./fonts/PermanentMarker.woff) format("woff");
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  font-family: "Inter", sans-serif;
+  background: #eeeeee;
+}
+
+.header {
+  height: 100vh;
+  background-image: url(./images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.header__title {
+  font-family: "Permanent Marker", cursive;
+  font-size: 140px;
+  line-height: 140px;
+  color: white;
+  text-transform: uppercase;
+  max-width: 1240px;
+  margin: auto;
+  text-align: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 790px;
+  margin: 100px auto 50px;
+}
+
+.card {
+  width: 350px;
+  margin-bottom: 60px;
+  padding: 45px 45px 70px;
+  background: #ffffff;
+  box-shadow: 4px 4px 5px rgba(0, 132, 255, 0.4);
+  display: inline-block;
+  object-fit: contain;
+  border-radius: 10%;
+}
+
+.card__card-title {
+  font-family: "Permanent Marker", cursive;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card__card-text {
+  font-size: 16px;
+}
+
+.card__card-image {
+  width: 100%;
+  margin-bottom: 25px;
+  height: 200px;
+  border-radius: 10%;
+}
+
+.footer {
+  display: flex;
+  min-height: 300px;
+  background-color: #000000;
+}
+
+.footer__footer-author {
+  font-size: 24px;
+  color: #ffffff;
+  margin: auto;
+}
+
+.footer__footer-credits {
+  font-size: 12px;
+  color: #ffffff;
+  margin: auto;
+}
+
+/* Já havia uma regra geral para links na linha 7, mas eu queria criar uma nova para o link que inseri no footer, criei as regras abaixo sabendo que teriam prioridade sobre as regras de cima.
+Reitero que não houve alteração nos códigos iniciais do arquivo, tampouco qualquer tipo de conflito com as funcionalidades originais. */
+
+.footer__footer-link {
+  color:#ffffff;
+  text-decoration: none;
+}
+
+.footer__footer-link:hover {
+  color:aquamarine;
+  text-decoration: none;
+  font-weight: bold;
+}
